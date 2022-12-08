@@ -1,0 +1,14 @@
+{
+  "name": "day3_nodejs_app",
+  "version": "1.0.0",
+  "description": "My first nodeApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aung Kyaw",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
