@@ -1,0 +1,6 @@
+bean
+flan
+apple
+banana
+beef
+papaya

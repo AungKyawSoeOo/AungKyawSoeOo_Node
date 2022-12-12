@@ -1,0 +1,6 @@
+They were out of: bean
+They were out of: flan
+They were out of: apple
+They were out of: banana
+They were out of: beef
+They were out of: papaya
