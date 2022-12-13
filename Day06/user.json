@@ -1,0 +1,62 @@
+[
+    {
+        "name": "mahesh",
+        "password": "password1",
+        "profession": "teacher",
+        "id": 1
+    },
+    {
+        "name": "suresh",
+        "password": "password2",
+        "profession": "librarian",
+        "id": 2
+    },
+    {
+        "name": "ramesh",
+        "password": "password3",
+        "profession": "clerk",
+        "id": 3
+    },
+    {
+        "name": "ramesh",
+        "password": "password3",
+        "profession": "clerk",
+        "id": 4
+    },
+    {
+        "name": "ramesh",
+        "password": "password3",
+        "profession": "clerk",
+        "id": 5
+    },
+    {
+        "name": "ramesh",
+        "password": "password3",
+        "profession": "clerk",
+        "id": 6
+    },
+    {
+        "name": "ramesh",
+        "password": "password3",
+        "profession": "clerk",
+        "id": 7
+    },
+    {
+        "name": "mohit",
+        "password": "password4",
+        "profession": "teacher",
+        "id": 8
+    },
+    {
+        "name": "mohit",
+        "password": "password4",
+        "profession": "teacher",
+        "id": 9
+    },
+    {
+        "name": "mohit",
+        "password": "password4",
+        "profession": "teacher",
+        "id": 10
+    }
+]
