@@ -58,5 +58,11 @@
         "password": "password4",
         "profession": "teacher",
         "id": 10
+    },
+    {
+        "name": "John Doe",
+        "password": "password5",
+        "profession": "programmer",
+        "id": 11
     }
 ]
