@@ -1,7 +1,7 @@
 # BIB OJT Node.js Pug
 - **URL**
 ```
-localhost:3000/api/add/[num1]/[num2]
+localhost:3000/
 
 
 ```
