@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title "Hello Pug"
+      style 
+         include style.css
+        
+   body
+      include ./header.pug
+      h2.greetings#people Hello World!
+      p=welcome
+      h3 I am #{age} years old.
+      p Jonathan says: #{greet}
+      a(href = "/hire") Hire me
+      img(src='/img/p.jpg') 
+      ul
+         each skill in skills
+            li=skill
+      include ./footer.pug

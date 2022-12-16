@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1{
+ 
+}
+p{
+  color: #8c6c6c;
+  width: 500px;
+  margin: 10px auto;
+}
+img{
+  width: 200px;
+  height: 200px;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  background: #30839c;
+  margin-top: 0;
+  color: #ffffff;
+}
+ul{
+  display: inline-block;
+  width: 300px;
+ margin-left: -45px;
+}
+li{
+  list-style-type: none;
+  text-align: center;
+}
