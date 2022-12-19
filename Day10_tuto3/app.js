@@ -9,7 +9,7 @@ app.use(multer().array())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.set('strictQuery', false);
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.json({ msg: "This is default CRUD route" });
 });
