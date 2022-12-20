@@ -17,6 +17,8 @@ const getPosts = async (req, res) => {
 }
 }
 
+
+
 const createPost = async (req, res) => {
   try {
       const postData = {
