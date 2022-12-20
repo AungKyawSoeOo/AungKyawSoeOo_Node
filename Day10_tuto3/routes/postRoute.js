@@ -1,4 +1,6 @@
+//tuto 3
 const express = require("express"); 
+
 
 const { getPosts, createPost} = require("../controllers/postController.js");
 const postRouter = express.Router();
