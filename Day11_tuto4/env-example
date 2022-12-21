@@ -3,5 +3,5 @@ BASE_URL=localhost:3000
 MONGO_URL=mongodb+srv://AungKyaw:L80rgSFA05rsBp39@cluster0.vpyup6o.mongodb.net/movieDB
 HOST=justinaung786@gmail.com
 SERVICE=gmail
-USER=
-PASS=
+USER=AungKyaw
+PASS=L80rgSFA05rsBp39
