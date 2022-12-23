@@ -1,0 +1,11 @@
+ a{
+  background-color: #7f7474;
+  color: #ffffff;
+  padding:5px 15px;
+  text-decoration: none;
+  margin: 35px 10px;
+}
+a:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
