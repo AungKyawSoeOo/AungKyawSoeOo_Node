@@ -20,5 +20,5 @@ cd Day12_tuto5
 npm install
 npm run dev
 
-open localhost:3000/api/movies in the browser
+open localhost:3000/ in the browser
 ```
