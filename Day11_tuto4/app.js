@@ -1,14 +1,19 @@
-require('dotenv').config()
-const express = require("express");
-const bodyParser = require("body-parser");
-const mongoose = require('mongoose');
-const multer = require("multer");
-const { movieRouter } = require("./routes/movieRoute.js");
+import express from "express"
+import session from "express-session"
+import multer from "multer"
+import dotenv from "dotenv";
+import mongDBSession from "connect-mongodb-session"
+import bodyParser from "body-parser"
+import bcrypt from "bcryptjs"
+const mongDbSession = mongDBSession(session);
 const app = express();
-app.use(multer().array())
-app.use(bodyParser.json())
+dotenv.config();
+app.set('view engine', 'pug');
+app.set('views', './views');
+app.use(multer().array());
+app.use(express.json()); 
+app.use(express.static("public")); 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 
 mongoose.set('strictQuery', false);
 const PORT = process.env.PORT || 3000;
