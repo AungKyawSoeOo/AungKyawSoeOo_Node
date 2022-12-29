@@ -1,0 +1,7 @@
+PORT=3000
+BASE_URL=localhost:3000
+DATABASE=mongodb://127.0.0.1:27017/postScmDb
+HOST=justinaung786@gmail.com
+SERVICE=gmail
+USER=
+PASS=
