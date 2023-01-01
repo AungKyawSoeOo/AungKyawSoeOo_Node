@@ -1,0 +1,23 @@
+doctype html
+html
+  head 
+    title My Blog
+    style 
+     
+      include ../css/reset.css
+      include ../css/style.css
+      include ../css/post.css
+  body 
+    include ./header.pug
+    div.container
+      h2=name
+      p="Rating --- "+ rating 
+      p="Release year --- "+ year
+      p=review
+      //-use method override to do delete/put/update request
+      //-https://github.com/expressjs/method-override
+      form.delete-form(action=`/api/movies/${id}?_method=DELETE` method="post")
+        button.btn-delete(type="submit" value="Delete") Delete
+      form.update-form(action=`/api/movies/${id}/update` method="get")
+        button.btn-update(type="submit" value="Update") Update
+      

@@ -1,0 +1,24 @@
+doctype html
+html
+  head 
+    title My Blog
+    style 
+      include ../css/reset.css
+      include ../css/style.css
+      include ../css/welcome.css
+  body 
+    include ./header.pug
+    h2= "Welcome from our movie website"
+    ul.ava
+     li 
+      img(src="../img/avatar.jpg")
+    
+    p 
+      |Hello vistior, you are at the right place if you want to know about movies. We are here for you.
+      |You can know about every kinds of movies . You can read movie reviews and you can check rating
+      |and release year. You can add new movies and their related information like release year , rating 
+      |and even write some reviews if you want to . 
+    button.api 
+      a(href="/api-docs") Go to Swagger API
+    h2= "Have a nice day"
+    

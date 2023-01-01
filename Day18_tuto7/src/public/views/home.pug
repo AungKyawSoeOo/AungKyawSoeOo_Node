@@ -1,0 +1,28 @@
+doctype html
+html
+  head 
+    title My Blog
+    style 
+     
+      include ../css/reset.css
+      include ../css/style.css
+      include ../css/home.css
+  body 
+    include ./header.pug
+    h2="Movies"
+    form.search(action="/api/movies/search" method=post)
+      input(type="text" name="name" placeholder="Batman") 
+      button.search(type="submit" value="submit") Search
+    h2="-- clik + button(right bottom) to add movies in database"
+    h2="-- click readmore to see details and (update , delete )"
+    ul
+      each movie in movies
+        li.post
+         p.name=movie.name
+         p.review=movie.review.substring(0,100)+ ".."
+         a(href=`/api/movies/${movie._id}`) Read More
+    button.add 
+        a(href="/compose") +
+
+   
+    

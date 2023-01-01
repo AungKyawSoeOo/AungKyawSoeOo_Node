@@ -1,0 +1,41 @@
+
+h1{
+  float: left;
+ 
+  line-height: 5px;
+  margin-left: 50px;
+  
+}
+h1 a{
+  font-size: 18px;
+  color: #ffffff;
+}
+.clearfix{
+  content: "";
+  display: block;
+  clear: both;
+}
+body{
+  position: relative;
+}
+.nav{
+  background:#bfbfbf;
+  padding: 25px 0px;
+}
+.nav ul{
+  float: right;
+}
+.nav ul li{
+ float: left;
+  margin-right: 30px;
+  line-height: 5px;
+}
+.nav ul li a{
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.nav ul li a:hover{
+  opacity: 0.8;
+}
+

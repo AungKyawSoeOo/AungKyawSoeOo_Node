@@ -1,0 +1,45 @@
+h2,p{
+  color: #a59999;
+  margin-left: 10px;
+  display: block;
+}
+h2{
+  font-size: 20px;
+  margin-top: 15px;
+}
+p{
+width: 700px;
+text-align: justify;
+margin-top: 5px;
+line-height: 1.3;
+}
+.container{
+  margin: 10px auto;
+  display: block;
+  width: 700px;
+}
+.btn-delete{
+  background-color: #d80606;
+  color: #ffffff;
+}
+.btn-delete,
+.btn-update{
+  border: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.btn-update{
+  background-color: #17dc14;
+  color: #ffffff;
+}
+.btn-delete:hover,
+.btn-update:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.delete-form,
+.update-form{
+  display: inline-block;
+}

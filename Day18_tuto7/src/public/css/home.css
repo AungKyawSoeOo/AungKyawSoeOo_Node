@@ -1,0 +1,44 @@
+h2{
+  color: #8c8282;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+button.add{
+  position: fixed;
+  bottom: 35px;
+  right: 45px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 55px;
+  background-color: #bfbfbf;
+ 
+  border: none;
+}
+button.add a{
+  color: #ffffff;
+}
+ul li.post{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+p.name,
+p.review{
+  color:#514c4c;
+  margin-left: 50px;
+  
+}
+p.review{
+  display: inline;
+}
+p.name{
+  font-size: 18px;
+}
+form.search{
+  margin-left: 70%;
+}
+button.search{
+  margin-left: 2px;
+  margin-top: 5px;
+}

@@ -1,0 +1,303 @@
+openapi: 3.0.2
+servers:
+  - url: http://127.0.0.1:3000
+info:
+  description: This is API Doc for NodeJS Frame
+  title: Swagger API Doc for NodeJS Frame
+  version: 1.0.0
+
+tags:
+  - name: Movies
+    description: Operations about Movies
+
+paths:
+  # Post Routes
+  /api/movies:
+    get:
+      tags:
+        - Movies
+      summary: Get all Movies
+      description: Grab all of the movies
+      responses:
+        "200":
+          description: Returns all Movies
+    post:
+      tags:
+        - Movies
+      summary: Create a new movie
+      requestBody:
+        description: Create a new movie
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Superman"
+                rating:
+                  type: string
+                  example: "5"
+                year:
+                  type: string
+                  example: "2019"
+                review:
+                  type: string
+                  example: "This is a great movie..."
+          application/xml:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Superman"
+                rating:
+                  type: string
+                  example: "5"
+                year: 
+                  type: string
+                  example: "2019"
+                review:
+                  type: string
+                  example: "This is a great movie..."
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Superman"
+                rating:
+                  type: string
+                  example: "5"
+                year:
+                  type: string
+                  example: "2019"
+                review:
+                  type: string
+                  example: "This is a great movie..."
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: "Superman"
+                  rating:
+                    type: string
+                    example: "5"
+                  year:
+                    type: string
+                    example: "2019"
+                  review:
+                    type: string
+                    example: "This is a great movie..."
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: "Superman"
+                  rating:
+                    type: string
+                    example: "5"
+                  year:
+                    type: string
+                    example: "2019"
+                  review: 
+                    type: string
+                    example:  "This is a great movie..."
+        "405":
+          description: Invalid input
+
+  /api/movies/{movieId}:
+    get:
+      tags:
+        - Movies
+      summary: Find movie by ID
+      description: Find a movie by it's ID
+      operationId: getMovieById
+      parameters:
+        - name: movieId
+          in: path
+          description: ID of movie to return
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  _id:
+                    type: string
+                    example: "62fde243b554f4955fdf7914"
+                  name:
+                    type: string
+                    example: "Superman"
+                  rating:
+                    type: string
+                    example: "5"
+                  year:
+                    type: string
+                    example: "2019"
+                  review:
+                    type: string
+                    example: "This is a great movie..."
+                  _v:
+                    type: number
+                    example: 0
+                  createdAt:
+                    type: string
+                    format: date
+                  updatedAt:
+                    type: string
+                    format: date
+        "404":
+          description: Movie not found
+    put:
+      tags:
+        - Movies
+      summary: Update a movie
+      operationId: updateMovieId
+      parameters:
+        - name: movieId
+          in: path
+          description: ID of movie to return
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Update an existing movie
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Superman"
+                rating:
+                  type: string
+                  example: "5"
+                year:
+                  type: string
+                  example: "2019"
+                review:
+                  type: string
+                  example: "This is a great movie..."
+      responses:
+        "200":
+          description: Updated Successfully!
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  _id:
+                    type: string
+                    example: "62fde243b554f4955fdf7914"
+                  name:
+                    type: string
+                    example: "name Updated"
+                  rating:
+                    type: string
+                    example: "rating Updated"
+                  year: 
+                    type: string
+                    example: "year Updated"
+                  review:
+                    type: string
+                    example: "This is a great movie..."
+                  status:
+                    type: boolean
+                    example: true
+                  createdAt:
+                    type: string
+                    format: date
+                  updatedAt:
+                    type: string
+                    format: date
+        "405":
+          description: Invalid input
+    delete:
+      tags:
+        - Movies
+      summary: Delete a movie
+      operationId: deleteMovie
+      parameters:
+        - name: movieId
+          in: path
+          description: Movie id to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Deleted Successfully!
+        "400":
+          description: Invalid post value
+   
+
+  /api/movies/search:
+    get:
+      tags: 
+        - Movies
+      summary: Search movie by name
+      descripiton: Search movie with the name
+      parameters:
+        - name: name
+          in: query
+          description: The name of movie 
+          required: true
+          type: string
+      responses:
+        200:
+          description: "A list of matching movies"
+          examples:
+            application/json:
+              [{
+                "name" : "Cars"
+              },
+              {
+                "name" : "Cinderella"
+              }]
+        404:
+          description: "No movies found"
+  #/api/movies/search
+  #  post:
+  #    tags:
+  #      - Movies
+  #    summary: Get search movies
+  #    operationId: searchmovie
+  #    parameters:
+  #      - name: name
+  #        in: query
+  #        description: Name of movie to return
+  #        required: true
+  #        schema:
+  #          type: string
+  #    requestBody:
+  #      description: name of the movie that you want to search
+  #      content:
+  #        application/json:
+  #          schema:
+  #            type: object
+  #            properties:
+  #              name:
+  #                type: string
+  #                example: "Superman"
+  #    responses:
+  #      "200":
+  #        description: Returns search Posts
+  #      "400":
+  #        description: An error occured

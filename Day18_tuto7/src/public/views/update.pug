@@ -1,0 +1,23 @@
+doctype html
+html
+  head 
+    title My Blog
+    style 
+     
+      include ../css/reset.css
+      include ../css/style.css
+      include ../css/update.css
+   
+  body 
+    include ./header.pug
+    h2 Update a movie
+    - if (errors) 
+      ul
+        each error in errors
+          li.error= error.msg
+    form(action=`/api/movies/${movie.id}?_method=PUT` method="post")
+      input(type="text" placeholder="name" name="name" value=`${movie.name}`)
+      input(type="text" placeholder="year" name="year" value=`${movie.year}`)
+      input(type="text" placeholder="rating" name="rating" value=`${movie.rating}`)
+      textarea(cols="30" rows="10" name="review" placeholder="review") #{movie.review}
+      button(type="submit" name="button") Update 

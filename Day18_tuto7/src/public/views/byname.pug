@@ -1,0 +1,20 @@
+doctype html
+html
+  head 
+    title My Blog
+    style 
+      include ../css/reset.css
+      include ../css/style.css
+      include ../css/contact.css
+  body 
+    include ./header.pug
+    ul
+      each item in movies
+        li
+          h2=item.name
+          p="Rating -- " + item.rating
+          p="Release Year -- "+ item.year 
+          p.review=item.review
+
+
+    
