@@ -1,9 +1,9 @@
 # BIB OJT Day20 tuto9
 - **URL**
 ```
-http://localhost:3000/register -> post method (email,password)
+http://localhost:3000/api/register -> post method (email,password)
 
-http://localhost:3000/login -> post method (email,password)
+http://localhost:3000/api/login -> post method (email,password)
 
 http://localhost:3000/api-docs/ (to view swagger api docs)
 
