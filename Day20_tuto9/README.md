@@ -1,0 +1,30 @@
+# BIB OJT Day20 tuto9
+- **URL**
+```
+http://localhost:3000/register -> post method (email,password)
+
+http://localhost:3000/login -> post method (email,password)
+
+http://localhost:3000/api-docs/ (to view swagger api docs)
+
+http://localhost:3000/api/posts (need to login first)
+  -get method -> To retrieve all posts
+  -post method -> To create new post (title,description)
+ 
+
+http://localhost:3000/api/posts/[id] (need to login first)
+  -get method -> To retrieve specific post with post Id
+  -put method -> To update a post with put method using post Id
+  -delete method -> To delete a post with post Id
+```
+
+- **Installation**
+```
+git clone https://github.com/AungKyawSoeOo/AungKyawSoeOo_Node.git
+cd Day20_tuto9
+npm install (to install node modules)
+npm run build (to compile typescript files to js)
+npm run dev (to run on localhost:3000 using nodemon)
+
+open http://localhost:3000/api/posts in the browser
+```
