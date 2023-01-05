@@ -1,0 +1,6 @@
+PORT=3000
+BASE_URL=localhost:3000
+DATABASE=mongodb://127.0.0.1:27017/resetPassDb
+jwtSecretOrKey=my secret
+Email=testingakso@gmail.com
+Password=rzwxmsssurmisusm

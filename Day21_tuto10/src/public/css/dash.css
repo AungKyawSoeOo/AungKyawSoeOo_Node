@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+  color:#f91d1d;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+a.register,a.login{
+  text-decoration: none;
+  margin: 20px auto;
+  display: block;
+  width: 10%;
+  text-align: center;
+  padding: 20px 10px;
+  color: white;
+  font-size: 18px;
+}
+a.register{
+background-color: #9be775;
+}
+a.login{
+  background-color: #95bcdc;
+}
