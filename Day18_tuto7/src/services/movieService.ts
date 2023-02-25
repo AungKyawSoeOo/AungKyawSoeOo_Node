@@ -4,7 +4,7 @@ import { movieCreate } from "../interfaces/movieInterface.js";
 import {validationResult} from "express-validator"
 import { logger } from "../logger/logger.js";
 import mongoose from "mongoose";
-import cookieParser from "cookie-parser"
+import cookieParser from "cookie-parser";
 import { read } from "fs";
 const app = express();
 
